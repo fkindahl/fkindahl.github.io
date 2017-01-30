@@ -1,19 +1,53 @@
 ﻿<!DOCTYPE html>
 <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
 <style>
+
+.node {
+	stroke: #fff;
+	stroke-width: 1px
+}
+
+h1 {
+	font-family: 'Ubuntu', sans-serif;
+	// text-align: center;
+	color: #fff;
+	font-size: 70px;
+}
+
+h4 {
+	font-family: 'Ubuntu', sans-serif;
+	// text-align: center;
+	color: #fff;
+	font-size: 40px;
+}
+
+body {
+	background-color: #f4d1d1;
+}
+
 text {
-  font: 10px sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  fill:#fff;
   text-anchor: middle;
 }
 
 </style>
-<svg width="960" height="880"></svg>
+<body>
+
+<h1>Project 1 - Group Visualization</h1>
+<h4>By Frida Kindahl</h4>
+
+<svg width="1000" height="1000"></svg>
+
 <script src="https://d3js.org/d3.v4.min.js"></script>
+
 <script>
 
 var svg = d3.select("svg"),
-    width = +svg.attr("width");
-
+	width = +svg.attr("width");
+	
 var format = d3.format(",d");
 
 var color = d3.scaleOrdinal(d3.schemeCategory20);
