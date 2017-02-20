@@ -50,7 +50,7 @@ d3.csv('wave 4.csv', function(data) {
   // update data table on brush event
   parcoords.on("brush", function(d) {
     d3.select("#grid")
-      .datum(d.slice(0,10))
+      .datum(d.slice(0,30))
       .call(grid)
       .selectAll(".row")
       .on({
