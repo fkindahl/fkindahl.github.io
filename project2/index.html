@@ -23,7 +23,7 @@ var green_to_blue = d3.scale.linear()
   .range(["#7AC143", "#00B0DD"])
   .interpolate(d3.interpolateLab);
 
-var color = function(d) { return green_to_blue(d['Education level (%)']); };
+var color = function(d) { return green_to_blue(d['Education level(%)']); };
 
 var parcoords = d3.parcoords()("#example")
   .color(color)
