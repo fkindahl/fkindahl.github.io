@@ -9,7 +9,7 @@ d3.parcoords = function(config) {
     brushed: false,
     mode: "default",
     rate: 20,
-    width: 1400,
+    width: 1500,
     height: 450,
     margin: { top: 24, right: 0, bottom: 24, left: 0 },
     color: "#069",
