@@ -39,7 +39,7 @@ d3.csv('wave 4.csv', function(data) {
   // create data table, row hover highlighting
   var grid = d3.divgrid();
   d3.select("#grid")
-    .datum(data.slice(0,10))
+    .datum(data.slice(0,30))
     .call(grid)
     .selectAll(".row")
     .on({
