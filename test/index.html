@@ -1,6 +1,6 @@
 <!doctype html>
 
-<title>Project 2 - What is justifiable</title> 
+<title>What is justifiable?</title> 
 <!-- http://syntagmatic.github.com/parallel-coordinates/ -->
 <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -53,7 +53,7 @@ var parcoords = d3.parcoords()("#example")
   .alpha(0.4);
 
 // load csv file and create the chart
-d3.csv('planet.csv', function(data) {
+d3.csv('wave 4.csv', function(data) {
   parcoords
     .data(data)
     .render()
