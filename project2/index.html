@@ -20,12 +20,12 @@
 <div id="grid"></div>
 
 <script id="brushing">// quantitative colour scale
-var green_to_blue = d3.scale.linear()
+var black_to_white = d3.scale.linear()
   .domain([1, 9])
-  .range(["#000000", "#e5e5e5"])
+  .range(["#000000", "#fff"])
   .interpolate(d3.interpolateLab);
 
-var color = function(d) { return green_to_blue(d['Education level(%)']); };
+var color = function(d) { return black_to_white(d['Education level(%)']); };
 
 var parcoords = d3.parcoords()("#example")
   .color(color)
