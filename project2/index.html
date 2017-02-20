@@ -19,11 +19,11 @@
 
 <script id="brushing">// quantitative colour scale
 var green_to_blue = d3.scale.linear()
-  .domain([9, 50])
+  .domain([1, 9])
   .range(["#7AC143", "#00B0DD"])
   .interpolate(d3.interpolateLab);
 
-var color = function(d) { return green_to_blue(d['Length of Day (hours)']); };
+var color = function(d) { return green_to_blue(d['Education level (%)']); };
 
 var parcoords = d3.parcoords()("#example")
   .color(color)
