@@ -8,6 +8,24 @@ body {
   background-color: #f4d1d1;
 }
 
+h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+
+h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+h4 {
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+}
+
+
 a {
   color: #454545;
 }
