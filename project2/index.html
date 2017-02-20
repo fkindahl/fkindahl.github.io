@@ -22,7 +22,7 @@
 <script id="brushing">// quantitative colour scale
 var black_to_grey = d3.scale.linear()
   .domain([1, 9])
-  .range(["#000000", "#e5e5e5"])
+  .range(["#f6068b", "#ffffff"])
   .interpolate(d3.interpolateLab);
 
 var color = function(d) { return black_to_grey(d['Education level(%)']); };
