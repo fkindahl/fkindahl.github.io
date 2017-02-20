@@ -20,7 +20,7 @@
 <script id="brushing">// quantitative colour scale
 var green_to_blue = d3.scale.linear()
   .domain([1, 9])
-  .range(["#7AC143", "#00B0DD"])
+  .range(["#7AC143", "#ff4365"])
   .interpolate(d3.interpolateLab);
 
 var color = function(d) { return green_to_blue(d['Education level(%)']); };
