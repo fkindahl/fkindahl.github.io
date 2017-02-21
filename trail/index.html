@@ -52,7 +52,7 @@ p {
 <br>
 <h3>First analytic trail</h3>
 
-<p>I started by looking at the WVS website and decided to investigate what the world thought was justifiable. I also wanted to see if that was correlated with the highest educational level in that country. My hypothesis was that countries with higher education level would think that e.g. homosexuality and abortion are justifiable. I selected the latest wave (2010-2014) and randomly choose the countries as shown below. </p>
+<p>I started by looking at the WVS website and decided to investigate what the world thought was justifiable. I also wanted to see if that was correlated with the highest educational level in that country. My hypothesis was that countries with higher education level would think that e.g. homosexuality and abortion are justifiable and that cheating on taxes and avoid fares are not justifiable. I selected the latest wave (2010-2014) and randomly choose the countries as shown below. </p>
 
 <img src="countries.png" class="images"></img>
 
@@ -90,7 +90,20 @@ p {
 
 <p>My visualization is inspired by <a href="http://bl.ocks.org/eesur/1a2514440351ec22f176">this</a> D3 example which I have modified. The result looks like this:</p>
 <img src="visualization.png" class="images"></img>
-<p> 
+
+<p>I decided to use parallel coordinates since I wanted to show 8 variables at the same time and give a good overview of the data. In my visualization, it is possible to hover over the countries to highlight the coordinates and see how they are connected, like this:</p> 
+<img src="details about specific country.png" class="images"></img>
+
+<p>You can also brush to mark specific values of a variable in order to understand correlations across the dimensions. The corresponding countries with all 8 mean values are then shown below the parallel coordinates. </p>
+<img src="cheating on tax vs education" class="images"></img>
+
+<h3>Learnings</h3>
+<p>In the example above you can see that the countries with the highest education level are the ones cheating on taxes, which contradicts my hypothesis.</p>
+
+<img src="highest education" class="images"></img>
+
+<p>By looking at the countries with the highest education level, I saw no correlation with the other variables except cheating on taxes. Values were spread all over the axes and therefore there must be other factors involved.</p>
+
 <p>Click <a href="https://fkindahl.github.io/project2/">here</a> to see my visualization. </p>
 </body>
 </html>
